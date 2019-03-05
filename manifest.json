@@ -1,0 +1,9 @@
+{
+    "manifest_version": 2,
+    "name": "Shuffle",
+    "version": "1.0",
+    "description": "Shuffle the order of space-separated items.",
+    "browser_action": {
+      "default_popup": "popup.html"
+    }
+}
