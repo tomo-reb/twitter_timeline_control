@@ -1,8 +1,19 @@
 {
     "manifest_version": 2,
-    "name": "Shuffle",
+    "name": "Twitter TimeLine Control",
     "version": "1.0",
-    "description": "Shuffle the order of space-separated items.",
+    "description": "ツイッターのタイムラインを指定した設定での表示変更を可能にします。",
+    "content_scripts": [
+      {
+        "matches": ["https://twitter.com/"],
+        "css": "contens.css",
+        "js": "contents.js"
+      }
+    ],
+    "background": {
+      "scripts": ["eventPage.js"],
+      "persistent": false
+    },
     "browser_action": {
       "default_popup": "popup.html"
     }
